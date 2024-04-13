@@ -1,0 +1,16 @@
+call plug#begin('~/.vim/plugged')
+
+"Fugitive Vim Github Wrapper"
+Plug 'tpope/vim-fugitive'
+
+" File explorer
+Plug 'preservim/nerdtree'
+
+" Autocomplete
+Plug 'vim-scripts/AutoComplPop'
+
+" Color scheme thingy
+Plug 'catpuccin/vim', { 'as': 'catpuccin' }
+
+
+call plug#end()
