@@ -4,11 +4,9 @@ set nocompatible
 " dark background
 set background=dark
 
-" Test for colorscheme thing
-colorscheme gruvbox
-
 " Thingy for line numbers
 set number
+set relativenumber
 
 " Status ting
 set laststatus=2
@@ -16,11 +14,15 @@ set laststatus=2
 " Wrap lines
 set wrap
 
-" This is needed for catpuccin
-set termguicolors
-
 " Encode
 set encoding=utf-8
+
+filetype on
+filetype plugin on
+filetype indent on
+syntax on
+set showcmd
+
 
 " Call the .vimrc.plug
 if filereadable(expand("~/.vimrc.plug"))
