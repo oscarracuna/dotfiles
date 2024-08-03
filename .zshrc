@@ -11,11 +11,37 @@ setopt numericglobsort     # sort filenames numerically when it makes sense
 setopt promptsubst         # enable command substitution in prompt
 
 WORDCHARS=${WORDCHARS//\/} # Don't consider certain characters part of the word
+#mkt
+function mkt(){
+	mkdir {nmap,ports,scripts,stuff}
+}
+function update-discord(){
+  sudo nano /usr/share/discord/resources/build_info.json
+}
 # neofetch thingy
 alias neofetch='neofetch --ascii --source /home/chopin/.config/neofetch/ascii'
 
+# ani cli 
+alias anime='ani-cli'
+
+# Cmatrix blue letters
+alias cmatrix='cmatrix -C blue'
+
+# minecraft launcher
+alias micra='minecraft-launcher'
+alias minecraft='minecraft-launcher'
+# uptime thing
+alias uptime='uptime -p'
+
+# PCS2X thing 
+alias PS2='./pcsx2.AppImage'
+
 # hide EOL sign ('%')
 PROMPT_EOL_MARK=""
+
+# nvim thing
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 
 # configure key keybindings
 bindkey -e                                        # emacs key bindings
@@ -247,10 +273,6 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
-#mkt
-function mkt(){
-	mkdir {nmap,ports,scripts,stuff}
-} 
 
 
 # enable auto-suggestions based on the history
@@ -266,3 +288,5 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH=$PATH:/home/rhaenesis/.spicetify
