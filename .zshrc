@@ -21,6 +21,9 @@ function update-discord(){
 # neofetch thingy
 alias neofetch='neofetch --ascii --source /home/chopin/.config/neofetch/ascii'
 
+#batcat thing
+alias bat='batcat'
+
 # ani cli 
 alias anime='ani-cli'
 
