@@ -20,7 +20,8 @@ bspc rule -a Screenkey manage=off
 bspc config focus_follows_pointer true
 picom &
 bspc config border_width 0
-feh --bg-fill /home/chopin/Pictures/wallpaper2.jpg
-xrandr --output Virtual1 --mode 1920x1080
-xsetroot -cursor_name left_ptr
+feh --bg-fill /home/rhaenesis/Pictures/wall.jpg
+xrandr --output DP-4 --mode 1920x1080 -r 165
+# xsetroot -cursor_name left_ptr
+./mouse-accel.sh
 
