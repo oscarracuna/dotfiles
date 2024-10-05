@@ -25,4 +25,5 @@ xrandr --output DP-4 --mode 1920x1080 -r 165
 # xsetroot -cursor_name left_ptr
 solaar -w hide
 ./mouse-accel.sh
+knob-go
 
