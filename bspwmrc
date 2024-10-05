@@ -23,5 +23,6 @@ bspc config border_width 0
 feh --bg-fill /home/rhaenesis/Pictures/wall.jpg
 xrandr --output DP-4 --mode 1920x1080 -r 165
 # xsetroot -cursor_name left_ptr
+solaar -w hide
 ./mouse-accel.sh
 
