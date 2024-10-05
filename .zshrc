@@ -18,6 +18,9 @@ function mkt(){
 function update-discord(){
   sudo nano /usr/share/discord/resources/build_info.json
 }
+function update(){
+  sudo apt update | apt upgrade
+}
 # neofetch thingy
 alias neofetch='neofetch --ascii --source /home/chopin/.config/neofetch/ascii'
 
